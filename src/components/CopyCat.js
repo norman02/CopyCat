@@ -1,4 +1,5 @@
 import React from "react";
+import { styles } from "../styles";
 
 const images = {
   copycat:
@@ -13,12 +14,13 @@ export class CopyCat extends React.Component {
     const toggleTape = this.props.toggleTape;
 
     return (
-      <div>
+      <div style={styles.divStyles}>
         <h1>Copy Cat</h1>
         <img
           alt="cat"
           src={copying ? images.copycat : images.quietcat}
           onClick={toggleTape}
+          style={styles.imgStyles}
         />
       </div>
     );
