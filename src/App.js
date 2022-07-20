@@ -1,7 +1,8 @@
 import {CopyCat} from './components/CopyCat'
+import {CopyCatContainer} from './containers/CopyCatContainer'
 function App() {
   return (
-    <CopyCat />
+    <CopyCatContainer />
   );
 }
 

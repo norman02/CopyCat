@@ -8,23 +8,9 @@ const images = {
 };
 
 export class CopyCat extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      copying: true,
-    };
-
-    this.toggleTape = this.toggleTape.bind(this);
-  }
-
-  toggleTape() {
-    this.setState({ copying: !this.state.copying });
-  }
-
   render() {
-    const copying = this.state.copying;
-    const toggleTape = this.toggleTape;
+    const copying = this.props.copying;
+    const toggleTape = this.props.toggleTape;
 
     return (
       <div>
